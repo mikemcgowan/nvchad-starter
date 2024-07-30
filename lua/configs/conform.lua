@@ -5,6 +5,16 @@ local options = {
     -- html = { "prettier" },
   },
 
+  -- added by Mike
+  formatters = {
+    stylua = {
+      prepend_args = {
+        "--indent-type", "Spaces",
+        "--indent-width", "2",
+      }
+    }
+  }
+
   -- format_on_save = {
   --   -- These options will be passed to conform.format()
   --   timeout_ms = 500,
